@@ -8,10 +8,8 @@ pipeline {
         IMAGE_TAG = 'latest'
         ECS_CLUSTER = 'testcluster'
         ECS_SERVICE = 'new-service-test'
-    }
 
-    // AWS Credentials Configuration
-    environment {
+        // AWS Credentials Configuration
         AWS_ACCESS_KEY_ID = credentials('aws-credentials')
         AWS_SECRET_ACCESS_KEY = credentials('aws-credentials')
     }
