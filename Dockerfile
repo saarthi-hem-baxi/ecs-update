@@ -13,8 +13,6 @@ RUN npm install
 # Copy the rest of the application's code to the container's working directory
 COPY . .
 
-# Expose the port that the application will listen on
-EXPOSE 80
 
 # Start the application when the container starts
 CMD ["node", "app.js"]
