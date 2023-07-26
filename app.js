@@ -1,8 +1,6 @@
-// app.js
 const http = require('http');
 
 const hostname = '0.0.0.0'; // Listen on all network interfaces
-const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -10,7 +8,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello, World for ecs deployment!\n');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(() => {
+  console.log(`Server running at http://${hostname}/`);
 });
 
